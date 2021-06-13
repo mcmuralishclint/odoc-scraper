@@ -1,5 +1,3 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import pandas as pd
 import bs4
 import requests
