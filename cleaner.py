@@ -3,7 +3,7 @@ import pandas as pd
 from pandas import ExcelWriter
 
 
-data = pd.read_csv('test_new.csv')
+data = pd.read_csv('scraped_data.csv')
 additionals = data['additionals']
 new_additional=[]
 for additional in additionals:
