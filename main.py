@@ -3,12 +3,6 @@ import bs4
 import requests
 import csv
 
-containers = driver.find_elements_by_xpath('//td[@class="elementor-heading-title elementor-size-default"]')
-containers_list = []
-for p in range(len(containers)):
-    containers_list.append(containers[p].text)
-print(containers_list)
-
 url = "https://www.odoc.life/covid19-srilanka/"
 r = requests.get(url) #returns the HTML of the page, can be done through urlopen as well
 soup = bs4.BeautifulSoup(r.content)
