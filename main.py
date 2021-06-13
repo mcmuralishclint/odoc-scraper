@@ -3,7 +3,6 @@ import bs4
 import requests
 import csv
 
-
 def main():
     url = "https://www.odoc.life/covid19-srilanka/"
     r = requests.get(url) #returns the HTML of the page, can be done through urlopen as well
