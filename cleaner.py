@@ -32,11 +32,9 @@ for rate in rates:
     rate= rate.replace('*P.H. – Per Head&', '&')
     rate= rate.replace('<span style="font-size: 15px; letter-spacing: -0.27px; text-align: center;">*P.H. – Per Head</span>&', '&')
     new_rates.append(rate)
-   
 
 data['additionals'] = pd.Series(new_additional)
 data['rates'] = pd.Series(new_rates)
-# print(data)
 
 writer = ExcelWriter('Final.xlsx')
 data.to_excel(writer,'Sheet1')
