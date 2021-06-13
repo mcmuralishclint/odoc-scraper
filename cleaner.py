@@ -2,7 +2,6 @@ from numpy import add
 import pandas as pd
 from pandas import ExcelWriter
 
-
 data = pd.read_csv('scraped_data.csv')
 additionals = data['additionals']
 new_additional=[]
@@ -17,7 +16,6 @@ for additional in additionals:
     additional = additional.replace('<b>Rates</b>','')
     additional = additional.replace('<strong>','')
     additional = additional.replace('</strong>','')
-    #new_additional += additional[2:]
     new_additional.append(additional[2:])
 
 
