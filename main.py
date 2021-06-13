@@ -1,7 +1,7 @@
 import pandas as pd
 import bs4
 import requests
-import 
+import csv
 
 
 def main():
